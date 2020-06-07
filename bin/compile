@@ -72,7 +72,7 @@ build-step "Updating TeX Live..."
 
 tlmgr option repository "$TEXLIVE_REPOSITORY"
 tlmgr repository list
-tlmgr update --self
+#tlmgr update --self
 
 # install user-provided-packages
 if [ -f "$BUILD_DIR/texlive.packages" ]; then
